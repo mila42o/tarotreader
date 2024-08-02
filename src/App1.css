@@ -1,0 +1,54 @@
+  .image-gallery {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+    gap: 10px;
+  }
+  
+  .draggable-image {
+    width: 200px;
+    height: auto;
+    cursor: grab;
+  }
+  
+  .dragging {
+    opacity: 0.5;
+  }
+  
+  .drop-zone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .drop-zone.over {
+    border-color: #000;
+  }
+  
+  .dropped-image {
+    width: auto;
+    height: 200px;
+  }
+  
+  .dropdown-header {
+    background-color: #7b3082;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 5px;
+  }
+  
+  .arrow {
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow.open {
+    transform: rotate(180deg);
+  }
